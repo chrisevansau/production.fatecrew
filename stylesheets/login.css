@@ -1,0 +1,55 @@
+body {
+	background-image: url(../images/login_bg.jpg);
+}
+.form {
+	background-color: #FFF;
+	width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+}
+.login_form {
+	background-color: #e9e9e9;
+	padding: 10px;
+}
+
+.button{
+	margin-bottom:5px;
+	margin-top:5px;
+	width:100%;
+}
+.strech{
+	width:100% !important;
+}
+
+.button img{
+	margin-bottom: -5px;
+}
+
+.login_form a{
+	text-decoration:underline;
+	
+}
+.loader{
+	display:block;
+	margin-top:200px;
+	margin-left:auto;
+	margin-right:auto;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+	border-radius: 10px;
+}.logo {
+	margin-right: auto;
+	margin-left: auto;
+	width: 232px;
+}
+#fb_login img{
+	margin-right:3px;
+}
+

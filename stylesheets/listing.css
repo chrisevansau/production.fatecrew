@@ -1,0 +1,31 @@
+/* CSS Document */
+
+.header_img {
+	background-position:center ;
+   background-repeat: no-repeat;
+    height: 522px;
+   
+}
+
+.listing_img_over {
+	background-image: url(../images/listing_img_over_lay.png);
+	height: 98px;
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+	margin-top: 548px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.two_third{
+	margin-bottom:-50px;
+	margin-top: -70px;
+	position: relative;
+	z-index:110;
+	
+}
+
+.add{
+	margin-left:100px;	
+}
