@@ -38,12 +38,13 @@ class User_model extends CI_Model {
 			
 			$loged_in = array(
 			'user_id' => $this->db->insert_id(),
-			'facebook_id'=> 0,
-			'pic'=> "defalt.jpg",
-			'name'=> $_POST['user_name']
+			'facebook_id'=> "NULL",
+			
+			'name'=> $_POST['first_name']
 			);
 			$this->session->set_userdata('active',true);
 			$this->session->set_userdata('loged_in',$loged_in);
+			$this->session->userdata('loged_in');
 			
 		
 	}

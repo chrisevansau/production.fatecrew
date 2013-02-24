@@ -56,7 +56,7 @@ class user extends CI_Controller {
 		
 		$this->User_model->insert();
 		
-		$this->session->set_flashdata('msg', 'Entry Created');
+		$this->session->set_flashdata('msg', 'Welcome to Fate Crew!');
 		redirect('/dock');
 	}
 
