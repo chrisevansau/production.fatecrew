@@ -55,5 +55,6 @@ $route['privacy-policy'] = 'welcome/privacy_policy';
 $route['terms-and-conditions'] = 'welcome/terms_and_conditions';
 
 
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
