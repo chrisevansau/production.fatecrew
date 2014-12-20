@@ -19,7 +19,7 @@
 		<!-- Included CSS Files -->
     	<link rel="stylesheet" href="/stylesheets/foundation.css">
 		<link rel="stylesheet" href="/stylesheets/app.css">
-        <link rel="stylesheet" href="http://foundation.zurb.com/stylesheets/docs/presentation.css">
+        <link rel="stylesheet" href="/stylesheets/presentation.css">
         <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
 </head>

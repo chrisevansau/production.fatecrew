@@ -18,7 +18,7 @@
 		<!-- Included CSS Files -->
     	<link rel="stylesheet" href="/stylesheets/foundation.css">
 		<link rel="stylesheet" href="/stylesheets/app.css">
-        <link rel="stylesheet" href="http://foundation.zurb.com/stylesheets/docs/presentation.css">
+        <link rel="stylesheet" href="/stylesheets/presentation.css">
         <link href="/stylesheets/login.css" rel="stylesheet" type="text/css" />
 </head>
 
