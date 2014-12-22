@@ -14,8 +14,11 @@ class Listing_model extends CI_Model {
 	var $city_id	= '';
 	var $user_id	= '';
 	var $active	= '';
+	var $go_to_url = '';
+	var $currency = '';
 	var $date_created	= '';
 	var $date_modified	= '';
+	var $sales_cost = '';
 
 	function __construct() {
 		parent::__construct();
@@ -265,5 +268,52 @@ class Listing_model extends CI_Model {
 		return $results;
 			
 	}
+
+	function addAffilate($data){
+		//var_dump($data);
+
+		// loop data
+		foreach($data["xmlData"]["products"]["product"] as $row){
+			//var_dump($row);
+
+			$this->id	= "";
+
+			$this->go_to_url = $row["buy-url"];
+
+		 	$this->bucket_list_name	= str_replace(array(".", ",", "'", "/", ":"), '' ,$row["name"]);
+			$this->search_engine_name	= str_replace(array(".", ",", "'", "/", ":"), '' ,$row["name"]);
+			$this->company	= $row["manufacturer-name"];
+			$this->desc	= $row["description"];
+
+			
+			$this->currency = $row["currency"];
+			
+			$this->cost	= $row["price"];
+			$this->sales_cost = $row["sale-price"];
+			$this->contact	= "";
+			$this->image	= $row["image-url"];
+			$this->address	= "";
+			$this->date_live	= date("Y-m-d",mktime(0, 0, 0, date("m")  , date("d"), date("Y")));
+			$this->status	= 1;
+			$this->city_id	= "";
+			$this->user_id	= "";
+			$this-> active	= 1;
+			$this->date_created	= date("Y-m-d H:i:s");
+			$this-> date_modified	= date("Y-m-d H:i:s");
+
+
+
+			
+			$this->db->insert('listing', $this);
+		
+
+		// set post data
+
+		// insert into database
+
+		}
+	}
+
+
 }
 ?>

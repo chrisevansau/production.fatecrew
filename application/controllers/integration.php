@@ -21,7 +21,8 @@ class integration extends CI_Controller {
 
 	function run(){
 		
-		echo $this->integration_model->get_data();
+		$data = $this->integration_model->get_data();
+		$this->integration_model->move_to_DB($data);
 
 	}
 }
