@@ -2,7 +2,7 @@
 <div class="header_feat">
   <div class="listing_img_over">&nbsp;</div>
   
-  <div class="header_img mar_top" style="background-image:url(/listing_images/<?=$result[0]['image']?>);"></div>
+  <div class="header_img mar_top" style="background-image:url(<?=$result[0]['image']?>);background-size: 1000px;"></div>
  <div class="header_content">
   <div class="contnet">
  <div class="one_third">
@@ -22,7 +22,7 @@
 
 <p><?=nl2br($result[0]['desc'])?></p>
 
-<?=anchor("/contact/to/". $result[0]['id'], "contact", "class='button'")?><br /><br />
+<?=anchor( $result[0]['go_to_url'], "Buy Now", "class='button'")?><br /><br />
 <iframe width="681" height="195" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?hl=en&amp;client=firefox-a&amp;q=<?=$result[0]['address']?>&amp;output=embed"></iframe>
 </div>
 <div class="one_third">

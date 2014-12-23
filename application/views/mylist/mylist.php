@@ -6,7 +6,7 @@
 
 <? foreach($list as $list_item){?>
 <tr>
-	<td><img src="/listing_images/<?=$list_item['image']?>" width="100" /></td>
+	<td><img src="<?=$list_item['image']?>" width="100" /></td>
     <td><?=$list_item['bucket_list_name']?></td>
     <td><?=anchor("mylist/invite/".$list_item['listing_id'],"invite friends", "class='button'");?></td>
     <td><?=anchor( "mylist/remove/".$list_item['listing_id'], "remove", "class='button'");?></td>

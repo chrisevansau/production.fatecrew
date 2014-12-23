@@ -61,13 +61,13 @@ class globals {
 		foreach($listing as $list)
 		{
 			// width="279"
-			$result .='<a href="/deal/'.str_replace(" ","-",$list[0]->search_engine_name).'">';
+			$result .='<a href="/deal/'.$list[0]->slug.'">';
 			$result .='<div class="feat_item">';
-            $result .='<img src="../../listing_images/'.$list[0]->image.'" width="279"  height="197" />';
+            $result .='<img src="'.$list[0]->image.'" width="279"  height="197" />';
             $result .='<div class="feat_sup_content">';
     	    $result .='<h2>'.$list[0]->bucket_list_name.'</h2>';
             $result .='<p>'.substr($list[0]->desc,0,40).'...</p>';
-			$result .='<p><a class="black_button" href="/deal/'.str_replace(" ","-",$list[0]->search_engine_name).'">view...</a></p>';
+			$result .='<p><a class="black_button" href="/deal/'.$list[0]->slug.'">view...</a></p>';
             $result .='</div>';
 			$result .='</div>';
 			$result .='</a>';
@@ -118,7 +118,7 @@ class globals {
 			// width="279"
 			$result .='<a href="/deal/'.str_replace(" ","-",$list[0]->search_engine_name).'">';
 			$result .='<div class="feat_item">';
-            $result .='<img src="../../listing_images/'.$list[0]->image.'" width="129"   />';
+            $result .='<img src="'.$list[0]->image.'" width="129"   />';
             $result .='<div class="feat_sup_content">';
     	    $result .='<h2>'.$list[0]->bucket_list_name.'</h2>';
             

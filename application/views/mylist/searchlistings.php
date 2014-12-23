@@ -20,11 +20,11 @@
   <? for($i=0;$i<count($listings);$i++){?>
 
 <div class="full_row_listing">
-<img src="/listing_images/<?=$listings[$i]['image']?>" width="66" />
+<img src="<?=$listings[$i]['image']?>" width="66" />
 <div class="title"><h2><?=substr($listings[$i]['bucket_list_name'],0,50)?></h2></div>
 <div class="desc"><?=substr($listings[$i]['desc'],0,200)?>...</div>
 
-<?=anchor("/deal/".str_replace( " ","-", $listings[$i]['search_engine_name']), "view", "class='button'")?> 
+<?=anchor("/deal/". $listings[$i]['slug'], "view", "class='button'")?> 
 </div>
 
 <? }?>
