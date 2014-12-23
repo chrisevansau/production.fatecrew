@@ -15,9 +15,6 @@ class integration_model extends CI_Model {
 	}
 
 	function get_data() {
-
-		
-		
 		$this->load->helper('xml');
     
     	//get the raw textdata of sample.xml

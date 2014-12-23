@@ -3,6 +3,7 @@ class Listing_model extends CI_Model {
 	var $id	= '';
 	var $bucket_list_name	= '';
 	var $search_engine_name	= '';
+	var $slug	= '';
 	var $company	= '';
 	var $desc	= '';
 	var $cost	= '';
@@ -159,10 +160,14 @@ class Listing_model extends CI_Model {
 	}
 	
 	function getByName($slug) {
-		$name = str_replace("-"," ",$slug);
-		
-		$query = $this->db->get_where('listing', array('search_engine_name' => $name));
+		$query = $this->db->get_where('listing', array('slug' => $slug));
 		return $query->result_array();
+	}
+
+	public function getSlug($name) {
+		return str_replace(" ","-",$name);
+		
+		
 	}
 	
 	function list_status($user_id, $list_id){
@@ -280,9 +285,10 @@ class Listing_model extends CI_Model {
 
 			$this->go_to_url = $row["buy-url"];
 
-		 	$this->bucket_list_name	= str_replace(array(".", ",", "'", "/", ":"), '' ,$row["name"]);
-			$this->search_engine_name	= str_replace(array(".", ",", "'", "/", ":"), '' ,$row["name"]);
-			$this->company	= $row["manufacturer-name"];
+		 	$this->bucket_list_name	= stripslashes($row["name"]);
+			$this->search_engine_name	= stripslashes($row["name"]);
+			$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")"), '' ,$row["name"])));
+			$this->company	= stripslashes($row["manufacturer-name"]);
 			$this->desc	= $row["description"];
 
 			
