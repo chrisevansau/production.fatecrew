@@ -82,7 +82,7 @@
 <div class="title"><h2><?=substr($listings[$i]['bucket_list_name'],0,50)?></h2></div>
 <div class="desc"><?=substr($listings[$i]['desc'],0,200)?>...</div>
 
-<?=anchor("/deal/". $listings[$i]['slug']), "view", "class='button secondary other_popular_items'")?> 
+<?=anchor("/deal/". $listings[$i]['slug'], "view", "class='button secondary other_popular_items'")?> 
 </div>
 
 <? }?>
