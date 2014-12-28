@@ -115,13 +115,14 @@ class globals {
 		
 		foreach($listing as $list)
 		{
-			$this->load->helper('text');
+			$postfix = "";
+			if(strlen($list[0]->bucket_list_name) >46){$postfix = " ...";}
 			// width="279"
 			$result .='<a href="/deal/'.str_replace(" ","-",$list[0]->search_engine_name).'">';
 			$result .='<div class="feat_item">';
             $result .='<img src="'.$list[0]->image.'" width="129"   />';
             $result .='<div class="feat_sup_content">';
-    	    $result .='<h2>'.word_limiter($list[0]->bucket_list_name,47).'</h2>';
+    	    $result .='<h2>'.substr($list[0]->bucket_list_name,0,43).$postfix.'</h2>';
             
             $result .='</div>';
 			$result .='</div>';
