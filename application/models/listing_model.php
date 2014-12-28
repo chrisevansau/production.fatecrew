@@ -287,7 +287,7 @@ class Listing_model extends CI_Model {
 
 		 	$this->bucket_list_name	= stripslashes($row["name"]);
 			$this->search_engine_name	= stripslashes($row["name"]);
-			$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")"), '' ,$row["name"])));
+			$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";"), '' ,$row["name"])));
 			$this->company	= stripslashes($row["manufacturer-name"]);
 			$this->desc	= $row["description"];
 
