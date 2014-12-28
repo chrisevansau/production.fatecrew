@@ -308,3 +308,7 @@ small{
     bottom: -93px;
     position: absolute;
 }
+
+.feat_sup_content a h2{
+	overflow: hidden;
+}
