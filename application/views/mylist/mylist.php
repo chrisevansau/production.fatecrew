@@ -10,7 +10,7 @@
     <td><?=$list_item['bucket_list_name']?></td>
     <td><?=anchor("mylist/invite/".$list_item['listing_id'],"invite friends", "class='button'");?></td>
     <td><?=anchor( "mylist/remove/".$list_item['listing_id'], "remove", "class='button'");?></td>
-    <td><?=anchor("mylist/book/".$list_item['listing_id'],"book", "class='button'");?></td>
+    <td><?=anchor($list_item['go_to_url'],"book", "class='button'");?></td>
   </tr>
 
 <? } ?>
