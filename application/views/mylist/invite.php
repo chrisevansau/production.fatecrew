@@ -49,7 +49,7 @@ exit = false;
 		 // location:"<?=$address?>", picture :"<?=$image ?>", "privacy":"OPEN", privacy:'SECRET' , start_time:$('#date').val()+"T01:00".substring(0, 4)
 			 FB.login(function(response) {
 				 console.log($('#date').val()+'T19:20+'+"01:00".substring(0, 4));
-			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>", cover:{source:"<?=image?>"} ,start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
+			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>", source:"<?=image?>" ,start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
 				console.log(resp);
 				eventId =resp.id;
 				$("#event_id").val(eventId);
