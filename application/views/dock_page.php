@@ -75,19 +75,16 @@
 </div>
 <div class="contnet">
 <h2>Other popular items</h2>
-<? for($i=0;$i<count($listings);$i++){?>
+<? for($i=$start;$i<$close;$i++){?>
 
-<div class="full_row_listing">
+<a class="full_row_listing" href="/deal/<?=$listings[$i]["slug"]?>">
 <img src="<?=$listings[$i]['image']?>" width="66" />
 <div class="title"><h2><?=substr($listings[$i]['bucket_list_name'],0,50)?></h2></div>
-<div class="desc"><?=substr($listings[$i]['desc'],0,200)?>...</div>
-
-<?=anchor("/deal/". $listings[$i]['slug'], "view", "class='button secondary other_popular_items'")?> 
-</div>
+<div class="desc"><?=$listings[$i]['desc']?></div>
+</a>
 
 <? }?>
+<? if((int)($page) > 1){ echo anchor("/dock/page/".($page - 1), "Last", "class='button secondary'"); }?> 
+<?=anchor("/dock/page/".($page + 1) , "Next", "class='button secondary'")?> 
+<br />
 </div>
-<!--
-
--->
-s

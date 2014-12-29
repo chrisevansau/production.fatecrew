@@ -312,3 +312,11 @@ small{
 .feat_sup_content a h2{
 	overflow: hidden;
 }
+
+.full_row_listing{
+	display: block;
+
+}
+.desc{
+	color:#6d6d6d !important;
+}
