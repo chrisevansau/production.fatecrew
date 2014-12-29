@@ -309,7 +309,7 @@ small{
     position: absolute;
 }
 
-.feat_sup_content a h2{
+.feat_sup_content a h2, .feat_sup_content h2{
 	overflow: hidden;
 }
 
