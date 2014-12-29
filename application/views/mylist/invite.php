@@ -56,7 +56,18 @@ exit = false;
 				 FB.api('/'+eventId+'/invited?users='+$("#peopleInvited").val()+", <?=$session['facebook_id']?>",'post',function(resp) {
         			console.log(resp+"--"); // should return true
 					if(resp){
-						
+						FB.api(
+    						"/"+eventId+"/photos",
+    						"POST",
+    							{
+       							 "source": "<?=$image?>"
+  							  },
+    							function (response) {
+     							 if (response && !response.error) {
+       							 /* handle the result */
+      							}
+   							 }
+						);
 						// window.location = "/mylist/event_create"
 						console.log('called');
 						return true;
