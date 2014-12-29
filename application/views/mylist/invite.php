@@ -142,13 +142,13 @@ exit = false;
 
 	<p>
 <h1>Choose Your friends</h1>
-<div class='large secondary button strech' id='fb_login'><img src='../../images/facebook_login_icon.jpg' width='23' height='22' />Mobilize your facebook crew »</div>
+<div class='large secondary button strech' id='fb_login'><img src='../../images/facebook_login_icon.jpg' width='23' height='22' />     Mobilize your Facebook crew »</div>
 <div id="people"></div>
 <h1>your crew</h1>
 <div id="people_invited"></div>
 
 <p>
-	<?php echo form_submit('submit', 'Create', "class='button' id='go'"); ?> <?php echo anchor("/dock", "Back", "class='button'"); ?>
+	<?php echo form_submit('submit', 'Create', "class='button' id='go'"); ?> <?php echo anchor("/dock", "Back"); ?>
 </p>
 <?php echo form_close(); ?>
 
