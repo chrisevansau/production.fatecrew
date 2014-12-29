@@ -147,7 +147,13 @@ class Listing_model extends CI_Model {
 	function getFacebookImage($id){
 		$query = $this->db->get_where('listing', array('id' => $id));
 		$listing =  $query->result_array();
-		return "http://www.fatecrew.com/".$listing[0]['image'];
+		return $listing[0]['image'];
+	}
+
+	function getURL($id){
+		$query = $this->db->get_where('listing', array('id' => $id));
+		$listing =  $query->result_array();
+		return $listing[0]['go_to_url'];
 	}
 	
 	// get company
