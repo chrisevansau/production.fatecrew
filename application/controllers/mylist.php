@@ -60,6 +60,7 @@ class mylist extends CI_Controller {
 		$address_name = $this->listing_model->getListingAddress($listing_id);
 		$image = $this->listing_model->getFacebookImage($listing_id);
 		$go_to_url = $this->listing_model->getURL($listing_id);
+		$desc = $this->listing_model->getURL($listing_id);
 		$page = array(
 			'session' =>$session_data,
 			'listing_name' =>$listing_name,
@@ -68,6 +69,7 @@ class mylist extends CI_Controller {
 			'address' => $address_name,
 			'image' => $image,
 			'go_to_url'=> $go_to_url,
+			'desc' => $desc,
 			
 			); 
 		$session_data = $this->session->userdata('loged_in');

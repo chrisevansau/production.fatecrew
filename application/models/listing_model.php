@@ -136,6 +136,12 @@ class Listing_model extends CI_Model {
 		
 	}
 	
+	function getDesc($id){
+		$query = $this->db->get_where('listing', array('id' => $id));
+		$listing =  $query->result_array();
+		return $listing[0]['desc'];
+	}
+
 	function getListingAddress($id){
 		$query = $this->db->get_where('listing', array('id' => $id));
 		$listing =  $query->result_array();
