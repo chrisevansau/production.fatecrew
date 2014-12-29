@@ -22,6 +22,11 @@ class Dock extends CI_Controller {
 		$data['page'] = 0;
 		
 		$session_data = $this->session->userdata('loged_in');
+
+		if(!$session_data){
+			redirect('/');
+		}
+
 		$this->load->view('header',$session_data);
 		$data['my_list'] = $this->listing_model->get_all_my_list($session_data['user_id']);
 		$data['listings']=$this->listing_model->get_all();

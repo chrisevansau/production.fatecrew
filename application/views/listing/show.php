@@ -6,7 +6,7 @@
  <div class="header_content">
   <div class="contnet">
  <div class="one_third">
-  <img src="../../images/logo.png" width="232" height="225" />
+  <a href="/dock"><img src="../../images/logo.png" width="232" height="225" /></a>
   </div>
   <div class="two_third">
   
