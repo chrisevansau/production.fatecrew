@@ -57,11 +57,11 @@ exit = false;
         			console.log(resp+"--"); // should return true
 					if(resp){
 						FB.api("/"+eventId, "POST", {
--						   cover_url: "<?=$image?>"
--						},
--						function(response) { 
--						   console.log(response);  // you'll get the response as 'true' or 'false'
--						});
+						   cover_url: "<?=$image?>"
+						},
+						function(response) { 
+						   console.log(response);  // you'll get the response as 'true' or 'false'
+						});
 						FB.api(
     						"/"+eventId+"/photos",
     						"POST",
