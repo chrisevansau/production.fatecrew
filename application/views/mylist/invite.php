@@ -56,6 +56,12 @@ exit = false;
 				 FB.api('/'+eventId+'/invited?users='+$("#peopleInvited").val()+", <?=$session['facebook_id']?>",'post',function(resp) {
         			console.log(resp+"--"); // should return true
 					if(resp){
+						FB.api("/"+eventId, "POST", {
+-						   cover_url: "<?=$image?>"
+-						},
+-						function(response) { 
+-						   console.log(response);  // you'll get the response as 'true' or 'false'
+-						});
 						FB.api(
     						"/"+eventId+"/photos",
     						"POST",
