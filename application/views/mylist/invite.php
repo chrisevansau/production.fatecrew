@@ -49,19 +49,26 @@ exit = false;
 		 // location:"<?=$address?>", picture :"<?=$image ?>", "privacy":"OPEN", privacy:'SECRET' , start_time:$('#date').val()+"T01:00".substring(0, 4)
 			 FB.login(function(response) {
 				 console.log($('#date').val()+'T19:20+'+"01:00".substring(0, 4));
-			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>", start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
+			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>" ,start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
 				console.log(resp);
 				eventId =resp.id;
 				$("#event_id").val(eventId);
 				 FB.api('/'+eventId+'/invited?users='+$("#peopleInvited").val()+", <?=$session['facebook_id']?>",'post',function(resp) {
         			console.log(resp+"--"); // should return true
 					if(resp){
-						FB.api("/"+eventId, "POST", {
-						   cover_url: "<?=image?>"
-						},
-						function(response) { 
-						   console.log(response);  // you'll get the response as 'true' or 'false'
-						});
+						FB.api(
+    						"/"+eventId+"/photos",
+    						"POST",
+    							{
+       							 "source": "<?=$image?>"
+  							  },
+    							function (response) {
+    								console.log(response);
+     							 if (response && !response.error) {
+       							 /* handle the result */
+      							}
+   							 }
+						);
 						// window.location = "/mylist/event_create"
 						console.log('called');
 						return true;
