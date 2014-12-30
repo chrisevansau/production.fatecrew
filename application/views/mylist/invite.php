@@ -75,7 +75,7 @@ exit = false;
       							}
    							 }
 						);
-						// window.location = "/mylist/event_create"
+						 window.location = "/dock/message/Event%20Created"
 						console.log('called');
 						return true;
 						
