@@ -66,7 +66,7 @@ exit = false;
     						"/"+eventId+"/photos",
     						"POST",
     							{
-       							 "source": "<?=$image?>"
+       							 "url": "<?=$image?>"
   							  },
     							function (response) {
     								console.log(response);
