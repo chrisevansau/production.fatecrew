@@ -52,6 +52,11 @@ class Dock extends CI_Controller {
 		$data['feat'] = $this->globals->printFeat();
 		$this->load->view('footer', $data);
 	}
+
+	function message($text){
+		$this->session->set_flashdata('msg', urldecode($text));
+		redirect('/dock');
+	}
 	
 	
 }
