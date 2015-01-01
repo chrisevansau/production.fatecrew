@@ -320,3 +320,6 @@ small{
 .desc{
 	color:#6d6d6d !important;
 }
+.float_desc{
+	float: inherit;
+}
