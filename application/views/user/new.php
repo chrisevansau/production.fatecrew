@@ -126,14 +126,15 @@ $(document).ready(function() {
     <input type="hidden" name="date_modified" value="<?php echo date("Y-m-d H:i:s"); ?>" maxlength="500" size="50"  />	
     
   <p>
-    <?php echo form_submit('submit', 'Create', 'class="button"'); ?>  <?php echo anchor("/login", "Back", 'class="button"'); ?>
+    <?php echo form_submit('submit', 'Create', 'class="button"'); ?>  <?php echo anchor("/login", "Back"); ?>
   </p>
   <?php echo form_close(); ?>
     
     
   </div>
   <div class="one_third">
-    <div class="ad">Content for  class "one_third" Goes Here</div>
+    <div class="ad"><a href="http://www.kqzyfj.com/click-7554568-11848784" target="_top">
+<img src="http://www.ftjcfx.com/image-7554568-11848784" width="400" height="600" alt="" border="0"/></a></div>
   </div>
   <div class="clear">&nbsp;</div>
   </div>
