@@ -1,21 +1,32 @@
   <div class="contnet">
   <div class="two_third">
     <h1>Privacy Policy</h1>
-  
+		
+		<p>This following document sets forth the Privacy Policy for the Fate Crew website, www.fatecrew.com.</p>
+
+		<p>Fate Crew is committed to providing you with the best possible customer service experience. Fate Crew is bound by the Privacy Act 1988 (Crh), which sets out a number of principles concerning the privacy of individuals.</p>
+
+		<h2>Collection of your personal information</h2>
+		<p>There are many aspects of the site which can be viewed without providing personal information, however, for access to future Fate Crew customer support features you are required to submit personally identifiable information. This may include but not limited to a unique username and password, or provide sensitive information in the recovery of your lost password.</p>
+
+		<h2>Sharing of your personal information</h2>
+		<p>We may occasionally hire other companies to provide services on our behalf, including but not limited to handling customer support enquiries, processing transactions or customer freight shipping. Those companies will be permitted to obtain only the personal information they need to deliver the service. Fate Crew takes reasonable steps to ensure that these organisations are bound by confidentiality and privacy obligations in relation to the protection of your personal information.</p>
+
+		<h2>Use of your personal information</h2>
+		<p>For each visitor to reach the site, we expressively collect the following non-personally identifiable information, including but not limited to browser type, version and language, operating system, pages viewed while browsing the Site, page access times and referring website address. This collected information is used solely internally for the purpose of gauging visitor traffic, trends and delivering personalized content to you while you are at this Site.</p>
+
+		<p>From time to time, we may use customer information for new, unanticipated uses not previously disclosed in our privacy notice. If our information practices change at some time in the future we will use for these new purposes only, data collected from the time of the policy change forward will adhere to our updated practices.</p>
+
+		<h2>Changes to this Privacy Policy</h2>
+		<p>Fate Crew reserves the right to make amendments to this Privacy Policy at any time. If you have objections to the Privacy Policy, you should not access or use the Site.</p>
+
+		<h2>Accessing Your Personal Information</h2>
+		<p>You have a right to access your personal information, subject to exceptions allowed by law. If you would like to do so, please let us know. You may be required to put your request in writing for security reasons. Fate Crew reserves the right to charge a fee for searching for, and providing access to, your information on a per request basis.  </p>
     
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at magna lacus. Ut suscipit elementum nunc, ut vestibulum leo auctor nec. Sed justo orci, dignissim a aliquet vitae, blandit eleifend sem. Nam pellentesque vehicula eros at rutrum. Nulla ipsum tortor, sodales sed imperdiet vel, interdum ut velit. Nullam lacinia tellus eget eros hendrerit non interdum est consectetur. Phasellus posuere bibendum luctus. Morbi auctor diam eleifend nunc vestibulum ut viverra turpis sollicitudin. Ut tempor sagittis mi, et feugiat enim suscipit at. Ut porta est sit amet velit rutrum vitae malesuada massa laoreet. Aenean eu risus at ipsum lobortis mattis nec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-<p>Morbi vitae mauris risus, ac commodo neque. Integer ac bibendum justo. Proin imperdiet accumsan elit sit amet dignissim. Curabitur gravida est eget ipsum vulputate eget adipiscing orci adipiscing. Aliquam sed risus ut leo tincidunt venenatis. Donec in nibh velit, vitae dapibus magna. Morbi tellus sem, varius vitae blandit sed, porttitor vitae tortor. Morbi augue nibh, commodo a tincidunt aliquam, mollis quis mi.</p>
-
-<p>Donec non sem id sem mattis aliquam. Suspendisse sit amet nunc id neque consequat dignissim. In at quam vel augue dignissim consequat eu eget diam. Aenean scelerisque, odio sed tristique interdum, urna ante dictum diam, nec bibendum leo libero ut lacus. Mauris porta odio diam. Quisque eu leo turpis, et malesuada elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-<p>Pellentesque id urna ultricies elit ultricies scelerisque. Nam sit amet nibh libero, ut pulvinar ipsum. Praesent feugiat orci nec enim luctus at porttitor risus auctor. Nullam rutrum placerat neque. Mauris ante nisl, gravida sed consequat vehicula, ultrices et felis. Sed eu nibh nec lacus auctor congue ut quis augue. Phasellus vehicula vehicula egestas. In quis eros sit amet mauris laoreet malesuada et at eros. Fusce volutpat augue ac velit eleifend et cursus lacus pellentesque. Maecenas tellus erat, gravida quis ullamcorper ac, sodales eget dui. Vivamus luctus mattis ligula, quis cursus ipsum condimentum sit amet. Pellentesque dictum molestie est, ac pulvinar dolor faucibus eget. Praesent sit amet lectus id tortor viverra scelerisque sed ac orci.</p>
-
-<p>Morbi lorem magna, accumsan nec sodales id, dignissim vel sem. Nunc quis ligula eros, ac ullamcorper ipsum. Proin fringilla malesuada felis, et dignissim velit sollicitudin sed. Praesent a mattis elit. Aenean sagittis interdum arcu sed eleifend. Pellentesque congue hendrerit est eu vulputate. Curabitur a pellentesque lectus. </p>
   </div>
   <div class="one_third">
-    <div class="ad">Content for  class "one_third" Goes Here</div>
+    <div class="ad"><a href="http://www.kqzyfj.com/click-7554568-11848784" target="_top">
+<img src="http://www.ftjcfx.com/image-7554568-11848784" width="400" height="600" alt="" border="0"/></a></div>
   </div>
   <div class="clear">&nbsp;</div>
   </div>
