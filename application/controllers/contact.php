@@ -38,7 +38,7 @@ class Contact extends CI_Controller {
 		
 		$this->email->from($_POST['email'], $_POST['name']);
 		if(!isset($_POST['email_to'])){
-			$to = 'hello@chrisevans.com.au';
+			$to = 'chris.w.evans.au@gmail.com';
 		}else{
 			$to = $_POST['email_to'];
 		}
