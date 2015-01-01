@@ -1,5 +1,6 @@
 
 <div class="contnet">
+  <h1>Search Results:</h1>
 <? $count =0;?>
 <? for($i=0;$i<count($listings);$i++){?>
 
@@ -16,5 +17,7 @@
   
   <? if($i==0){?>
   <p>No serch results found</p>
-  <? } ?>
+  <? }else{  ?>
+  <p><?=$count?>:Items found</p>
+   <? }  ?>
 </div>
