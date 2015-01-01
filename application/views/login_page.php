@@ -74,7 +74,7 @@
 
 </script>
 <div class="logo"><img src="../../images/logo.png" width="232" height="225" /></div>
-<img class="loader" src="http://www.gseforsale.aero/images/ajax-loader.gif" style="display:none;" />
+<img class="loader" src="/images/ajax-loader.gif" style="display:none;" />
 <div class="form">
 
 <? if($this->session->flashdata('msg')){?>

@@ -51,7 +51,7 @@
 		</div>
         <div class="one_third">
           <div class="my_list">
-		  <h1>My List</h1>
+		  <h1>My BUCKET List</h1>
           <? $count =0;?>
           <? foreach($my_list as $row){?>
 		  <div class="my_row">
@@ -74,7 +74,7 @@
 	</div>
 </div>
 <div class="contnet">
-<h2>Other popular items</h2>
+<h2>Search Items for your bucket list</h2>
 <? for($i=$start;$i<$close;$i++){?>
 
 <a class="full_row_listing" href="/deal/<?=$listings[$i]["slug"]?>">
