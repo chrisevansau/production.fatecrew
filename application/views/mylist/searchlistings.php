@@ -5,10 +5,18 @@
  			<img src="../../../images/logo.png" width="232" height="225" />
  		</div>
  		<div class="two_third">
-			<h3>
-				want to add a listing?
-			</h3>
-			<p>copy on whats in it for the customer Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum fermentum est, lacinia fermentum nibh commodo vel. Integer a est tellus. Integer eu libero tellus. Integer lobortis leo at dolor pharetra sit amet cursus mi fermentum. Praesent vel libero est. Ut dictum enim ut nulla adipiscing vitae faucibus lectus placerat. Mauris vel erat neque. Aliquam lacinia quam ac magna convallis porttitor. Curabitur odio quam, hendrerit et facilisis ut, adipiscing in lacus. Aenean lobortis massa iaculis justo consequat aliquet. Nunc id nisl lectus, et tempor est. Nullam volutpat viverra metus eu eleifend. Sed convallis rutrum tellus et consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id quam tellus. </p>
+			<h3>Bring your crew together, and be adored.</h3>
+  <p>
+  Picture this, you and your crew on that lifetime experience you have on your bucket list, the same adventure they have also longed for. You’ll be admired by your crew for the laughs, the fun, the memories.
+</p>
+  <p>
+Search through the top selected offers from the biggest adventure and travel sites online. 
+</p>
+  <p>
+So make your bucket list today get started inviting your crew, with the simple to use facebook event creator. Don’t miss out the memories won’t wait.   
+</p>
+<p>
+  <a class="black_button" href="/login">Register Now</a></p>
 		</div>
 	</div>
 </div>
@@ -17,21 +25,21 @@
   <div class="contnet">
   <div class="two_third">
     
-  <? for($i=0;$i<count($listings);$i++){?>
+  <? for($i=0;$i<30;$i++){?>
 
-<div class="full_row_listing">
+<a href="/deal/<?=$listings[$i]['slug']?>" class="full_row_listing">
 <img src="<?=$listings[$i]['image']?>" width="66" />
 <div class="title"><h2><?=substr($listings[$i]['bucket_list_name'],0,50)?></h2></div>
-<div class="desc"><?=substr($listings[$i]['desc'],0,200)?>...</div>
-
-<?=anchor("/deal/". $listings[$i]['slug'], "view", "class='button'")?> 
-</div>
+<div class="desc float_desc"><?=substr($listings[$i]['desc'],0,100)?>...</div>
+</a>
 
 <? }?>
+<?=anchor("/login" , "To see more login and create your list..", "class='button secondary'")?> 
     
   </div>
   <div class="one_third">
-    <div class="ad">Content for  class "one_third" Goes Here</div>
+   <div class="ad"><a href="http://www.kqzyfj.com/click-7554568-11848784" target="_top">
+<img src="http://www.ftjcfx.com/image-7554568-11848784" width="400" height="600" alt="" border="0"/></a></div>
   </div>
   <div class="clear">&nbsp;</div>
   </div>
