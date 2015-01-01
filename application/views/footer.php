@@ -22,7 +22,7 @@
 	<div class="contnet">
     Site content &copy; 2012 Fatecrew, inc. 
     <div style="float:right;">
-    site map | <?=anchor('/privacy-policy','privacy policy');?> | <?=anchor('/terms-and-conditions','terms and conditions');?>
+    <?=anchor('/sitemap.xml.gz','Sitemap');?> | <?=anchor('/privacy-policy','Privacy Policy');?> | <?=anchor('/terms-and-conditions','Terms And Conditions');?>
 
 
     </div>
