@@ -8,7 +8,7 @@
 			<h3>
 				Having an issue?
 			</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum fermentum est, lacinia fermentum nibh commodo vel. Integer a est tellus. Integer eu libero tellus. Integer lobortis leo at dolor pharetra sit amet cursus mi fermentum. Praesent vel libero est. Ut dictum enim ut nulla adipiscing vitae faucibus lectus placerat. Mauris vel erat neque. Aliquam lacinia quam ac magna convallis porttitor. Curabitur odio quam, hendrerit et facilisis ut, adipiscing in lacus. Aenean lobortis massa iaculis justo consequat aliquet. Nunc id nisl lectus, et tempor est. Nullam volutpat viverra metus eu eleifend. Sed convallis rutrum tellus et consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id quam tellus. </p>
+			<p>Need help? Try some of the helpful hints below to resolve your issue. If the info is not in the below please contact us via the contact page.   </p>
 		</div>
 	</div>
 </div>
@@ -28,10 +28,12 @@
 
 <?php endIf; ?>
 
+<?=anchor("/contact" , "Can't Find What your looking for? Contact Us...", "class='button secondary'")?> 
 
 </div>
 <div class="one_third">
-  <div class="ad">Content for  class "one_third" Goes Here</div>
+  <div class="ad"><a href="http://www.kqzyfj.com/click-7554568-11848784" target="_top">
+<img src="http://www.ftjcfx.com/image-7554568-11848784" width="400" height="600" alt="" border="0"/></a></div>
 </div>
 <div class="clear">&nbsp;</div>
 </div>
