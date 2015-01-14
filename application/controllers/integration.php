@@ -25,5 +25,11 @@ class integration extends CI_Controller {
 		$this->integration_model->move_to_DB($data);
 
 	}
+
+	function city(){
+		$data = $this->integration_model->get_city_data();
+		$this->integration_model->move_to_city_DB($data);
+
+	}
 }
 ?>
