@@ -20,6 +20,7 @@ class Listing_model extends CI_Model {
 	var $date_created	= '';
 	var $date_modified	= '';
 	var $sales_cost = '';
+	var $sku = '';
 
 	function __construct() {
 		parent::__construct();
@@ -218,7 +219,7 @@ class Listing_model extends CI_Model {
 	
 	
 	function getByKeyWord($word){
-		$query = $this->db->query("SELECT * FROM  `listing` WHERE  `bucket_list_name` LIKE  '%".$word."%'AND  `search_engine_name` LIKE  '%".$word."%' AND  `desc` LIKE  '%".$word."%'");
+		$query = $this->db->query("SELECT * FROM  `listing` WHERE  UPPER(`search_engine_name`) LIKE  '%".$word."%' or  UPPER(`desc`) LIKE  '%".$word."%'");
 		
 		return $query->result_array();
 	}
@@ -291,40 +292,42 @@ class Listing_model extends CI_Model {
 
 		// loop data
 		foreach($data["xmlData"]["products"]["product"] as $row){
-			//var_dump($row);
+			//var_dump($row);die();
 
-			$this->id	= "";
+			if($row['upc'] == "escapes"){
+				$this->id	= "";
 
-			$this->go_to_url = $row["buy-url"];
+				$this->go_to_url = $row["buy-url"];
 
-		 	$this->bucket_list_name	= stripslashes($row["name"]);
-			$this->search_engine_name	= stripslashes($row["name"]);
-			//$this->slug	= urlencode($row["name"]);
-			$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";"), '' ,$row["name"])));
-			$this->company	= stripslashes($row["manufacturer-name"]);
-			$this->desc	= $row["description"];
+			 	$this->bucket_list_name	= stripslashes($row["name"]);
+				$this->search_engine_name	= stripslashes($row["name"]);
+				//$this->slug	= urlencode($row["name"]);
+				$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";"), '' ,$row["name"])));
+				$this->company	= stripslashes($row["manufacturer-name"]);
+				$this->desc	= $row["description"];
 
-			
-			$this->currency = $row["currency"];
-			
-			$this->cost	= $row["price"];
-			$this->sales_cost = $row["sale-price"];
-			$this->contact	= "";
-			$this->image	= $row["image-url"];
-			$this->address	= "";
-			$this->date_live	= date("Y-m-d",mktime(0, 0, 0, date("m")  , date("d"), date("Y")));
-			$this->status	= 1;
-			$this->city_id	= "";
-			$this->user_id	= "";
-			$this-> active	= 1;
-			$this->date_created	= date("Y-m-d H:i:s");
-			$this-> date_modified	= date("Y-m-d H:i:s");
+				
+				$this->currency = $row["currency"];
+				
+				$this->cost	= $row["price"];
+				$this->sales_cost = $row["sale-price"];
+				$this->contact	= "";
+				$this->image	= $row["image-url"];
+				$this->address	= "";
+				$this->date_live	= date("Y-m-d",mktime(0, 0, 0, date("m")  , date("d"), date("Y")));
+				$this->status	= 1;
+				$this->city_id	= "";
+				$this->user_id	= "";
+				$this->sku = $row["sku"];
+				$this-> active	= 1;
+				$this->date_created	= date("Y-m-d H:i:s");
+				$this-> date_modified	= date("Y-m-d H:i:s");
 
 
 
-			
-			$this->db->insert('listing', $this);
-		
+				
+				$this->db->insert('listing', $this);
+			}
 
 		// set post data
 
