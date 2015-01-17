@@ -219,7 +219,7 @@ class Listing_model extends CI_Model {
 	
 	
 	function getByKeyWord($word){
-		$query = $this->db->query("SELECT * FROM  `listing` WHERE  UPPER(`search_engine_name`) LIKE  '%".$word."%' or  UPPER(`desc`) LIKE  '%".$word."%'");
+		$query = $this->db->query("SELECT * FROM  `listing` WHERE  UPPER(`search_engine_name`) LIKE  '%".strtoupper(str_replace("%20"," ", $word))."%' or  UPPER(`desc`) LIKE  '%".strtoupper(str_replace("%20"," ", $word))."%'");
 		
 		return $query->result_array();
 	}
@@ -302,7 +302,7 @@ class Listing_model extends CI_Model {
 			 	$this->bucket_list_name	= stripslashes($row["name"]);
 				$this->search_engine_name	= stripslashes($row["name"]);
 				//$this->slug	= urlencode($row["name"]);
-				$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";"), '' ,$row["name"])));
+				$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";", "'"), '' ,$row["name"])));
 				$this->company	= stripslashes($row["manufacturer-name"]);
 				$this->desc	= $row["description"];
 
