@@ -1,6 +1,6 @@
 
 <div class="header_feat">
-  <div class="header_img mar_top" style="background-image:url(../../images/header_image.jpg);"><!--img src="../../images/header_image.jpg" width="1440" height="522" /--></div>
+  <div class="header_img mar_top" style="background-image:url(../../images/new_bg_2.jpg);background-position-y: -340px;"><!--img src="../../images/header_image.jpg" width="1440" height="522" /--></div>
   <div class="header_content">
   <div class="contnet">
   <div class="one_third">
@@ -18,7 +18,7 @@ Search through the top selected offers from the biggest adventure and travel sit
 So make your bucket list today get started inviting your crew, with the simple to use facebook event creator. Don’t miss out the memories won’t wait.   
 </p>
 <p>
-  <a class="black_button" href="/login">Register Now</a></p>
+  <a class="black_button" href="/login">Lets Get Started</a></p>
   </div>
   </div>
   </div>
