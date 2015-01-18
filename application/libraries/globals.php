@@ -120,7 +120,7 @@ class globals {
 			$postfix = "";
 			if(strlen($list[0]->bucket_list_name) >46){$postfix = " ...";}
 			// width="279"
-			$result .='<a href="/deal/'.str_replace(" ","-",$list[0]->search_engine_name).'">';
+			$result .='<a href="/deal/'.$list[0]->slug.'">';
 			$result .='<div class="feat_item">';
             $result .='<img src="'.$list[0]->image.'" width="129"   />';
             $result .='<div class="feat_sup_content">';
