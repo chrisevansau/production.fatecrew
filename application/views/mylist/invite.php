@@ -45,7 +45,17 @@ exit = false;
     });
 
     // Additional initialization code here
-	 $("#invite").submit(function(){
+	 $("#invite").submit(function(e){
+	 	// Validate form 
+	 	alert($('#date').val());
+	 	if($('#date').val() == ""){
+	 		
+	 		$('#dateError').fadeIn();
+	 		e.preventDefault(e);
+
+
+	 	}else{
+
 		 // location:"<?=$address?>", picture :"<?=$image ?>", "privacy":"OPEN", privacy:'SECRET' , start_time:$('#date').val()+"T01:00".substring(0, 4)
 			 FB.login(function(response) {
 				 console.log($('#date').val()+'T19:20+'+"01:00".substring(0, 4));
@@ -75,7 +85,7 @@ exit = false;
       							}
    							 }
 						);
-						 window.location = "/dock/message/Event%20Created"
+						 window.location = "/dock/message/Event%20created%20check%20your%20facebook%20account"
 						console.log('called');
 						return true;
 						
@@ -88,6 +98,8 @@ exit = false;
 			
 			}, {scope: 'create_event,rsvp_event'});
 			 return false
+			}
+			e.preventDefault(e);
 		});
 		
 	$("#fb_login").click(function (){
@@ -128,13 +140,13 @@ exit = false;
 </script>
 <div class="contnet">
 <div class="two_third">
-<?php echo form_open('mylist/event_create', 'id="invite"'); ?>
+<?php echo form_open('#', 'id="invite"'); ?>
 
 <h2>Invite your friends to: <i><?=$company_name?> - <?=$listing_name?></i></h2>
 	<p>
 	<label for="event_date_time">Date:</label><br/>
 	<input type="text" name="event_date_time" id="date" value=""  />	</p>
-    
+    <small class="error" id="dateError" style="display:none;">Please pick a date.</small>
     <p>
     
     <script>
