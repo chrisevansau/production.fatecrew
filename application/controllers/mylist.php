@@ -30,6 +30,7 @@ class mylist extends CI_Controller {
 		$session_data = $this->session->userdata('loged_in');
 		
 		$this->User_model->addToList($session_data["user_id"], $listing_id, $session_data["facebook_id"] );
+		$this->session->set_flashdata('msg', urldecode("Item was added to you list."));
 		redirect('/dock');
 	}
 	
