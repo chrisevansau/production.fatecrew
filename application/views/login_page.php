@@ -36,32 +36,44 @@
 
     // Additional initialization code here
 	$("#fb_login").click(function (){
-		$(".form").hide();
-		$(".loader").show();
-	 FB.login(function(response) {
+    $("#sign_up").reveal('animation:fadeAndPop');
+    
+
+    });
+  $("#nl_yes").click(function (){
+    logMeIn(1);
+  });
+  $("#nl_no").click(function (){
+    logMeIn(0);
+  
+  });
+  function logMeIn(nl){
+
+    $(".form").hide();
+    $(".loader").show();
+   FB.login(function(response) {
    if (response.authResponse) {
      FB.api('/me?fields=username,first_name,last_name,email,gender,location ,birthday,id,picture', function(response) {
-		 //console.log(response);
-		 //alert(response.location.name);
-		 //alert(response.birthday);
-       	$.ajax({
-  			url: "/user/fackbook_create",
-  			type: "POST",
-        	data: ({user_name: response.username,first_name: response.first_name, last_name: response.last_name, email:response.email, gender:response.gender, facebook_id:response.id, location:response.location.name, dob:response.birthday, pic:response.picture }),
-			
-			}).done(function(output) { 
-  			console.log(output);
-			
-			window.location = "/dock"
-		});
+     //console.log(response);
+     //alert(response.location.name);
+     //alert(response.birthday);
+        $.ajax({
+        url: "/user/fackbook_create",
+        type: "POST",
+          data: ({user_name: response.username,first_name: response.first_name, last_name: response.last_name, email:response.email, gender:response.gender, facebook_id:response.id, location:response.location.name, dob:response.birthday, pic:response.picture,pic:nl }),
+      
+      }).done(function(output) { 
+        console.log(output);
+      
+      window.location = "/dock"
+    });
      });
    } else {
      console.log('User cancelled login or did not fully authorize.');
    }
  }, {scope: 'email,user_birthday'});
  
-  
-  });
+  }
   };
   // Load the SDK Asynchronously
   (function(d){
@@ -74,6 +86,13 @@
 
 </script>
 <div class="logo"><img src="../../images/logo.png" width="232" height="225" /></div>
+<div id="sign_up" class="reveal-modal medium">
+  <h2>Stay Informed</h2>
+  <p>Would you like stay up to date with the lates offers?</p>
+  <?=anchor("/", "OK ", "class='success button large' id='nl_yes'")?> <?=anchor("/", "No thanks", "id='nl_no'")?> 
+
+   <a class="close-reveal-modal">&#215;</a>
+</div>
 <img class="loader" src="/images/ajax-loader.gif" style="display:none;" />
 <div class="form">
 
@@ -95,6 +114,7 @@
 </div>
 	<script src="/javascripts/modernizr.foundation.js"></script>
 	<script src="/javascripts/foundation.js"></script>
+  <script src="/javascripts/jquery.foundation.reveal.js"></script>
 	<script src="/javascripts/app.js"></script>
 </body>
 </html>

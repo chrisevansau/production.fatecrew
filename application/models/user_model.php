@@ -13,6 +13,7 @@ class User_model extends CI_Model {
 	var $date_created	= '';
 	var $date_modified	= '';
 	var $facebook_id = '';
+	var $newsletter = '';
 
 	function __construct() {
 		parent::__construct();
@@ -123,6 +124,7 @@ class User_model extends CI_Model {
 		$this->gender	= $data['gender'];
 		$this->dob	= $data["birthday"];
 		$this->active	= 1;
+		$this->newsletter	= $data['newsletter'];
 		$this->facebook_id = $data[0];
 		$this->date_created	= date("Y-m-d H:i:s");
 
