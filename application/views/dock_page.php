@@ -38,6 +38,32 @@
 	padding-left: 5px;
 }
 </style>
+<script>
+$(document).ready(function(evt){
+$("#first_time").reveal('animation:fadeAndPop');
+$("#find").click(function() {
+	
+     window.location = "/search/"+$("#value").val();
+    
+});
+
+});
+</script>
+<div id="first_time" class="reveal-modal medium">
+  <h2>Welcome to Fatecrew</h2>
+  <p>Tell us one place you want to go to before you kick the bucket?</p>
+  <div class="row collapse">
+  <div class="nine mobile-three columns">
+    <input type="text" id="value" />
+  </div>
+  <div class="two mobile-one columns">
+     <div class="button expand postfix" id='find'>Search</div>
+    
+  </div>
+</div>
+
+   <a class="close-reveal-modal">&#215;</a>
+</div>
 <div class="blue">
 	<div class="contnet">    
     <? if($this->session->flashdata('msg')){?>
