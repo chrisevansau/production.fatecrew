@@ -138,8 +138,9 @@
     <div id="sign_up" class="reveal-modal medium">
         <h2>Stay Informed</h2>
         <p>Would you like stay up to date with the lates offers?</p>
-        <?=anchor( "/", "OK ", "class='success button large' id='nl_yes'")?>
-            <?=anchor( "/", "No thanks", "id='nl_no'")?>
+        <div class='success button large' id='nl_yes'>Sure</div>
+        <?=anchor( "#", "OK ", "class='success button large' id='nl_yes'")?>
+            <?=anchor( "#", "No thanks", "id='nl_no'")?>
 
                 <a class="close-reveal-modal">&#215;</a>
     </div>
