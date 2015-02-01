@@ -26,12 +26,14 @@
 <body>
     <div id="fb-root"></div>
     <script>
-    $("#nl_yes").click(function() {
+    $("#nl_yes").click(function(e) {
+        e.preventDefault();
          console.log('CALLED 1');
          signUp();
          console.log('CALLED LAST');
     });
-    $("#nl_no").click(function() {
+    $("#nl_no").click(function(e) {
+        e.preventDefault();
       window.location = "/dock" 
     });
 
@@ -134,8 +136,9 @@
     <div id="sign_up" class="reveal-modal medium">
         <h2>Stay Informed</h2>
         <p>Would you like stay up to date with the lates offers?</p>
-        <div class='success button large' id='nl_yes'>Sure »</div>
-        <div  id='nl_no'>No Thanks</div>
+        <?=anchor( "/", "OK ", "class='success button large' id='nl_yes'")?>
+            <?=anchor( "/", "No thanks", "id='nl_no'")?>
+
                 <a class="close-reveal-modal">&#215;</a>
     </div>
     <img class="loader" src="/images/ajax-loader.gif" style="display:none;" />
