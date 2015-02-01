@@ -44,7 +44,7 @@
         }).done(function(output) {
             console.log(output);
             
-            window.location = "/dock" 
+            //window.location = "/dock" 
 
         });
 
