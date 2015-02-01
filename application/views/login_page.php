@@ -49,10 +49,7 @@
         });
          console.log('CALLED LAST');
     });
-    $("#nl_no").click(function() {
-        
-      window.location = "/dock" 
-    });
+    
 
             FB.init({
                 appId: '360920813983587', // App ID
@@ -132,10 +129,10 @@
     <input type="hidden" id="username">
     <div id="sign_up" class="reveal-modal medium">
         <h2>Stay Informed</h2>
-        <p>Would you like stay up to date with the lates offers?</p>
-        <div class='success button large' id='nl_yes'>Sure</div>
-        <?=anchor( "#", "OK ", "class='success button large' id='nl_yes'")?>
-            <?=anchor( "#", "No thanks", "id='nl_no'")?>
+        <p>Would you like stay up to date with the lates offers? We only send around one email a month with hand picked offers just for you. </p>
+        <div class='success button large' id='nl_yes'>Sure!</div>
+        
+            <?=anchor( "/dock", "No thanks")?>
 
                 <a class="close-reveal-modal">&#215;</a>
     </div>
