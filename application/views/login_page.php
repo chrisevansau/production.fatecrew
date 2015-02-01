@@ -29,21 +29,10 @@
     
 
         window.fbAsyncInit = function() {
-            $("#nl_yes").click(function(e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
+            $("#nl_yes").click(function() {
+        
          console.log('CALLED 1');
-         signUp();
-         console.log('CALLED LAST');
-    });
-    $("#nl_no").click(function(e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-      window.location = "/dock" 
-    });
-
-    function signUp(){
-        console.log('CALLED 2');
+         console.log('CALLED 2');
         $.ajax({
             url: "/user/fackbook_newsletter",
             type: "POST",
@@ -58,9 +47,15 @@
             window.location = "/dock" 
 
         });
+         console.log('CALLED LAST');
+    });
+    $("#nl_no").click(function() {
+        
+      window.location = "/dock" 
+    });
 
-    }
-            
+    f
+
             FB.init({
                 appId: '360920813983587', // App ID
                 channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
