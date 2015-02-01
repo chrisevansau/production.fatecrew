@@ -27,13 +27,16 @@
     <div id="fb-root"></div>
     <script>
     $("#nl_yes").click(function() {
+         console.log('CALLED 1');
          signUp();
+         console.log('CALLED LAST');
     });
     $("#nl_no").click(function() {
       window.location = "/dock" 
     });
 
     function signUp(){
+        console.log('CALLED 2');
         $.ajax({
             url: "/user/fackbook_newsletter",
             type: "POST",
@@ -42,6 +45,7 @@
             }),
 
         }).done(function(output) {
+            console.log('CALLED 3');
             console.log(output);
             
             //window.location = "/dock" 
