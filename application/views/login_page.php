@@ -54,8 +54,6 @@
       window.location = "/dock" 
     });
 
-    f
-
             FB.init({
                 appId: '360920813983587', // App ID
                 channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
