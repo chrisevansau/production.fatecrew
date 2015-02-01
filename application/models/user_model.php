@@ -28,6 +28,7 @@ class User_model extends CI_Model {
 		$this->password	= md5($_POST['password']);
 		$this->city_id	= $_POST['city_id'];
 		$this->gender	= $_POST['gender'];
+		$this->newsletter	= $_POST['newsletter'];
 		$this->dob	= $_POST['dob'];
 		$this->active	= 1;
 		$this->date_created	= date("Y-m-d H:i:s");
@@ -180,6 +181,7 @@ class User_model extends CI_Model {
 		$this->password	= $_POST['password'];
 		$this->city_id	= $_POST['city_id'];
 		$this->gender	= $_POST['gender'];
+		$this->newsletter	= $_POST['newsletter'];
 		$this->dob	= $_POST['dob'];
 		$this->active	= $_POST['active'];
 		$this->date_created	= $this->date_created;

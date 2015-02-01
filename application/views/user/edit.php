@@ -96,6 +96,13 @@ $(document).ready(function() {
     
 	
 	</p>
+	<p>
+	<label for="gender">Newsletter</label><br/>
+    
+    Sure: <input name="newsletter" type="radio" value="1" <? if($result["newsletter"] == "1"){?>checked="checked"<? }?> />No thanks:<input name="newsletter" type="radio" value="0" <? if($result["newsletter"] == "0"){?>checked="checked"<? }?> />
+    
+	
+	</p>
 
 	<p>
 	<label for="dob">Date of birth:</label><br/>

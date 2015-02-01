@@ -103,6 +103,12 @@ $(document).ready(function() {
       <div class="error" style="display:none;" id="pick_gender"><small>Please tell us your gender</small>	</div>
     
     <p>
+    	<p>
+      <label for="gender">Newsletter:</label><br/>
+      Sure:<input type="radio" name="newsletter" checked="checked" value="1" />No Thanks:<input type="radio" name="newsletter" value="0" />
+     
+    
+    <p>
       <label for="dob">Birthday:</label><br/>
       <input type="text" name="dob" id="dob" value=""  /><small>Please tell us your birthday</small>	</p>
     <script>
@@ -110,7 +116,7 @@ $(document).ready(function() {
 		$( "#dob" ).datepicker({ dateFormat: "yy-mm-dd",
 			changeMonth: true,
 			changeYear: true,
-			yearRange: "1985"
+			yearRange: "1960"
 		});
 	});
 	</script>
