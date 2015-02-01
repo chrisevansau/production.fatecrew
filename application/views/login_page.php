@@ -62,7 +62,15 @@
                             }).done(function(output) {
                                 console.log(output);
 
-                                window.location = "/dock"
+                                // check if the user is in the database
+
+                                if(output == "user exists"){
+                                   window.location = "/dock" 
+                                }else{ 
+                                    $("#sign_up").reveal('animation:fadeAndPop');
+                                }
+
+                                
                             });
                         });
                     } else {
