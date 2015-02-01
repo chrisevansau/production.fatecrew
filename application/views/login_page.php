@@ -34,23 +34,8 @@
                 cookie: true, // enable cookies to allow the server to access the session
                 xfbml: true // parse XFBML
             });
-
             // Additional initialization code here
             $("#fb_login").click(function() {
-                $("#sign_up").reveal('animation:fadeAndPop');
-
-
-            });
-            $("#nl_yes").click(function() {
-                logMeIn(1);
-            });
-            $("#nl_no").click(function() {
-                logMeIn(0);
-
-            });
-
-            function logMeIn(nl) {
-
                 $(".form").hide();
                 $(".loader").show();
                 FB.login(function(response) {
@@ -71,8 +56,7 @@
                                     facebook_id: response.id,
                                     location: response.location.name,
                                     dob: response.birthday,
-                                    pic: response.picture,
-                                    pic: nl
+                                    pic: response.picture
                                 }),
 
                             }).done(function(output) {
@@ -88,7 +72,8 @@
                     scope: 'email,user_birthday'
                 });
 
-            }
+
+            });
         };
         // Load the SDK Asynchronously
         (function(d) {
