@@ -49,6 +49,14 @@ class User_model extends CI_Model {
 			
 		
 	}
+	function fackbook_newsletter() {
+			$data=array(
+            'newsletter'=>1
+            );
+        	$this->db->where('user_name',$_POST['user_name']);
+        	$this->db->update('user',$data);
+			echo "sucess";
+	}
 	function fackbook_insert() {
 		
 		

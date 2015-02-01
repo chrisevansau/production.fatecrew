@@ -26,6 +26,30 @@
 <body>
     <div id="fb-root"></div>
     <script>
+    $("#nl_yes").click(function() {
+         signUp();
+    });
+    $("#nl_no").click(function() {
+      window.location = "/dock" 
+    });
+
+    function signUp(){
+        $.ajax({
+            url: "/user/fackbook_newsletter",
+            type: "POST",
+            data: ({
+                user_name: $("#username").val(response.username)
+            }),
+
+        }).done(function(output) {
+            console.log(output);
+            
+            window.location = "/dock" 
+
+        });
+
+    }
+
         window.fbAsyncInit = function() {
             FB.init({
                 appId: '360920813983587', // App ID
@@ -44,6 +68,9 @@
                             //console.log(response);
                             //alert(response.location.name);
                             //alert(response.birthday);
+
+                            // update user name input user_name: response.username,
+                            $("#username").val(response.username);
                             $.ajax({
                                 url: "/user/fackbook_create",
                                 type: "POST",
@@ -99,6 +126,7 @@
     </script>
     <div class="logo"><img src="../../images/logo.png" width="232" height="225" />
     </div>
+    <input type="hidden" id="username">
     <div id="sign_up" class="reveal-modal medium">
         <h2>Stay Informed</h2>
         <p>Would you like stay up to date with the lates offers?</p>
