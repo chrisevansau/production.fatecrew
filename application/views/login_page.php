@@ -37,7 +37,7 @@
             url: "/user/fackbook_newsletter",
             type: "POST",
             data: ({
-                user_name: $("#username").val(response.username)
+                user_name: $("#username").val()
             }),
 
         }).done(function(output) {
