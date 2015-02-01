@@ -28,12 +28,14 @@
     <script>
     $("#nl_yes").click(function(e) {
         e.preventDefault();
+        e.stopImmediatePropagation();
          console.log('CALLED 1');
          signUp();
          console.log('CALLED LAST');
     });
     $("#nl_no").click(function(e) {
         e.preventDefault();
+        e.stopImmediatePropagation();
       window.location = "/dock" 
     });
 
