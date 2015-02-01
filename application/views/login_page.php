@@ -26,7 +26,10 @@
 <body>
     <div id="fb-root"></div>
     <script>
-    $("#nl_yes").click(function(e) {
+    
+
+        window.fbAsyncInit = function() {
+            $("#nl_yes").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
          console.log('CALLED 1');
@@ -52,13 +55,12 @@
             console.log('CALLED 3');
             console.log(output);
             
-            //window.location = "/dock" 
+            window.location = "/dock" 
 
         });
 
     }
-
-        window.fbAsyncInit = function() {
+            
             FB.init({
                 appId: '360920813983587', // App ID
                 channelUrl: '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
