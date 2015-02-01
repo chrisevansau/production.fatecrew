@@ -91,6 +91,10 @@ class user extends CI_Controller {
 		$this->session->set_flashdata('msg', 'Entry Deleted');
 		redirect('user/show_list');
 	}
+
+	function fackbook_newsletter(){
+		$this->User_model->fackbook_newsletter();
+	}
 	
 	function prosess_fb(){
 		
