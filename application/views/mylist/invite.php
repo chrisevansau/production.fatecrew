@@ -85,6 +85,11 @@ exit = false;
       							}
    							 }
 						);
+						var url = window.open('http://facebook.com/events', '_blank');
+						if(url){
+						//Browser has allowed it to be opened
+						win.focus();
+						}
 						 window.location = "/dock/message/Event%20created%20check%20your%20facebook%20account"
 						console.log('called');
 						return true;
