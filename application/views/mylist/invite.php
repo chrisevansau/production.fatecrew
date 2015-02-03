@@ -56,6 +56,7 @@ exit = false;
 	 	}else{
 
 		 // location:"<?=$address?>", picture :"<?=$image ?>", "privacy":"OPEN", privacy:'SECRET' , start_time:$('#date').val()+"T01:00".substring(0, 4)
+			 $("#locking").reveal('closeOnBackgroundClick:true');
 			 FB.login(function(response) {
 				 console.log($('#date').val()+'T19:20+'+"01:00".substring(0, 4));
 			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>" ,start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
@@ -137,6 +138,9 @@ exit = false;
    
 
 </script>
+<div id="locking" class="reveal-modal medium">
+  Please wait... 
+</div>
 <div class="contnet">
 <div class="two_third">
 <?php echo form_open('#', 'id="invite"'); ?>
