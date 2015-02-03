@@ -8,7 +8,12 @@
 			<h3>
 				Regisration
 			</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum fermentum est, lacinia fermentum nibh commodo vel. Integer a est tellus. Integer eu libero tellus. Integer lobortis leo at dolor pharetra sit amet cursus mi fermentum. Praesent vel libero est. Ut dictum enim ut nulla adipiscing vitae faucibus lectus placerat. Mauris vel erat neque. Aliquam lacinia quam ac magna convallis porttitor. Curabitur odio quam, hendrerit et facilisis ut, adipiscing in lacus. Aenean lobortis massa iaculis justo consequat aliquet. Nunc id nisl lectus, et tempor est. Nullam volutpat viverra metus eu eleifend. Sed convallis rutrum tellus et consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id quam tellus. </p>
+			<p>Welcome to Fate Crew! Sign up today to start living and enjoying life with your friends. </p>
+
+<p>We want you to start living all the adventures that  you always dreamed about. Live the adventures with your friends and family and cross them off together. 
+</p>
+<p>Join us and lets make some memories! </p>
+			</p>
 		</div>
 	</div>
 </div>
