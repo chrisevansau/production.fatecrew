@@ -47,7 +47,6 @@ exit = false;
     // Additional initialization code here
 	 $("#invite").submit(function(e){
 	 	// Validate form 
-	 	alert($('#date').val());
 	 	if($('#date').val() == ""){
 	 		
 	 		$('#dateError').fadeIn();
@@ -60,7 +59,7 @@ exit = false;
 			 FB.login(function(response) {
 				 console.log($('#date').val()+'T19:20+'+"01:00".substring(0, 4));
 			FB.api('/me/events','post',{name:"<?=substr($listing_name,0,70)?>",privacy:'SECRET', location:"<?=$address?>" ,description:"<?=$desc?> <?=$go_to_url?>" ,start_time:$('#date').val()+'T19:20+'+"01:00".substring(0, 4)},function(resp) {
-				//console.log(resp);
+				console.log(resp);
 				eventId =resp.id;
 				$("#event_id").val(eventId);
 				 FB.api('/'+eventId+'/invited?users='+$("#peopleInvited").val()+", <?=$session['facebook_id']?>",'post',function(resp) {
