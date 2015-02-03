@@ -22,6 +22,7 @@ class Dock extends CI_Controller {
 		$data['page'] = 0;
 		
 		$session_data = $this->session->userdata('loged_in');
+		$data['first_time'] = $this->session->userdata('first_time');
 
 		if(!$session_data){
 			redirect('/');
@@ -34,6 +35,7 @@ class Dock extends CI_Controller {
 		$this->load->view('dock_page',$data);
 		$data['feat'] = $this->globals->printFeat();
 		$this->load->view('footer', $data);
+		$this->session->set_userdata('first_time', true);
 	}
 
 	public function page($page)

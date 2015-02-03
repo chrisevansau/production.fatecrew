@@ -40,7 +40,10 @@
 </style>
 <script>
 $(document).ready(function(evt){
-$("#first_time").reveal('animation:fadeAndPop');
+	<?php if(!$first_time){ ?>
+		$("#first_time").reveal('animation:fadeAndPop');
+	<?php } ?>
+
 $("#find").click(function() {
 	
      window.location = "/search/"+$("#value").val();
