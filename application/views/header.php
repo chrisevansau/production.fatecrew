@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="/stylesheets/presentation.css">
         <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
+        <meta name="robots" content="INDEX, FOLLOW">
 </head>
 
 <body>
