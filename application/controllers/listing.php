@@ -25,7 +25,7 @@ class listing extends CI_Controller {
 
 	function show($slug) {
 		$session_data = $this->session->userdata('loged_in');
-		$this->load->view('header',$session_data);
+		//$this->load->view('header',$session_data);
 		
 		$data['result'] = $this->Listing_model->getByName($slug);
 		$this->Listing_model->addHit($session_data['user_id'],$data['result'][0]['id'] );
