@@ -93,11 +93,13 @@
 </div>
 
 <div class="contnet">
-<div class="two_third">
-<h1><?=$result[0]['bucket_list_name']?></h1>
-<span >By - <?=$result[0]['company']?></span>
+<div class="two_third" itemscope itemtype="http://data-vocabulary.org/Product">
+<h1 itemprop="name"><?=$result[0]['bucket_list_name']?></h1>
+<span itemprop="brand">By - <?=$result[0]['company']?></span> 
+<img src="<?=$result[0]['image']?>" itemprop="image" style="display:none;" />
+<span itemprop="price" style="display:none;"><?=$result[0]['sales_cost']?></span>
 
-<p><?=nl2br($result[0]['desc'])?></p>
+<p itemprop="description"><?=nl2br($result[0]['desc'])?></p>
 
 <?=anchor( $result[0]['go_to_url'], "Buy Now", "class='button success round' target='_blank'")?>    <?=anchor( "/mylist/add/".$result[0]['id'], "Or add to my bucket list","class='button round'")?><br /><br />
 <iframe width="681" height="195" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?hl=en&amp;client=firefox-a&amp;q=<?=$result[0]['company']?>&amp;output=embed"></iframe>
