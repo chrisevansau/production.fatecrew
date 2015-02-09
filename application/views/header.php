@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Adventures deals bucket list | FateCrew.com</title>
+<title>Summer Bucket List Ideas For Your Next Holiday| FateCrew.com</title>
 
 <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
 	  <link rel="stylesheet" href="/stylesheets/redmond/jquery-ui-1.8.20.custom.css">
@@ -23,6 +23,9 @@
         <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
         <meta name="robots" content="INDEX, FOLLOW">
+        <meta name="description" content="Picture this, you and your crew on that lifetime experience you have on your bucket list, the same adventure they have also longed for. You’ll be admired by your crew for the laughs, the fun, the memories.">
+        <meta name="keywords" content="Summer Bucket List Ideas">
+        <meta name="author" content="Fate Crew">
 </head>
 
 <body>
