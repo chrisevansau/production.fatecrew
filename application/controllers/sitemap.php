@@ -43,7 +43,7 @@ class sitemap extends CI_Controller {
         	    "loc" => "http://fatecrew.com/deal/" . $this->listing_model->getSlug($page['slug']),
             	"lastmod" => date("c", strtotime($page['date_modified'])),
      	       "changefreq" => "daily",
-     	       "priority" => "2.0"
+     	       "priority" => "1.0"
      	   );
 
      	   $this->sitemaps->add_item($item);
