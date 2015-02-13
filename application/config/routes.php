@@ -53,6 +53,7 @@ $route['how-to-add-a-listing'] = 'welcome/how_to_add';
 $route['listings'] = 'welcome/searchListings';
 $route['privacy-policy'] = 'welcome/privacy_policy';
 $route['terms-and-conditions'] = 'welcome/terms_and_conditions';
+$route['404_override'] = 'welcome/pageNotFound';
 
 
 

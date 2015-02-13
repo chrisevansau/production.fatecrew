@@ -105,6 +105,15 @@ class Welcome extends CI_Controller {
 		$date['feat'] = $this->globals->printFeat();
 		$this->load->view('footer', $date);
 	}
+
+	public function pageNotFound(){
+		$session_data = $this->session->userdata('loged_in');
+		$this->load->view('header',$session_data);
+		
+		$this->load->view('404');
+		$date['feat'] = $this->globals->printFeat();
+		$this->load->view('footer', $date);
+	}
 }
 
 /* End of file welcome.php */
