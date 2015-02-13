@@ -28,6 +28,7 @@ class listing extends CI_Controller {
 		//$this->load->view('header',$session_data);
 		
 		$data['result'] = $this->Listing_model->getByName($slug);
+		if(count($data['result']) == 0){show_404();}
 		$data['name'] = $session_data['name'];
 		$this->Listing_model->addHit($session_data['user_id'],$data['result'][0]['id'] );
 		$data['status'] = $this->Listing_model->list_status($session_data['user_id'],$data['result'][0]['id']);
