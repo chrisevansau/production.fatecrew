@@ -336,6 +336,13 @@ class Listing_model extends CI_Model {
 		}
 	}
 
+	function getTotalByKeyword($word){
+		$this->db->like('name', $word);
+		$this->db->from('item');
+		return $this->db->count_all_results();
+
+	}
+
 
 }
 ?>

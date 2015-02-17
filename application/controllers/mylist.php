@@ -8,6 +8,7 @@ class mylist extends CI_Controller {
 		$this->load->database();
 		$this->load->model('User_model');
 		$this->load->model('event_model');
+		$this->load->model('Item_model');
 		$this->load->model('listing_model');
 		$this->load->helper('url');
 		$this->load->helper('form');
@@ -16,6 +17,10 @@ class mylist extends CI_Controller {
 		
 	function index() {
 		$session_data = $this->session->userdata('loged_in');
+
+		// get all items for this user 
+		$date['items'] =  $this->Item_model->get_all_user($session_data["user_id"]);
+
 		$date['list'] =  $this->User_model->getMyList($session_data["user_id"]);
 		$session_data = $this->session->userdata('loged_in');
 		$this->load->view('header',$session_data);

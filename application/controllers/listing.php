@@ -88,9 +88,11 @@ class listing extends CI_Controller {
 		$session_data = $this->session->userdata('loged_in');
 		$this->load->view('header',$session_data);
 		$data['listings'] = $this->Listing_model->getByKeyWord($word);
+		$data['word'] = $word;
 		$this->load->view('listing/search', $data);
 		$date['feat'] = $this->globals->printFeat();
 		$this->load->view('footer', $date);
 	}
+
 }
 ?>

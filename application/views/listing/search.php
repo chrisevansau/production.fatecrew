@@ -1,6 +1,14 @@
 
 <div class="contnet">
   <h1>Search Results:</h1>
+   <div class="row">
+  <div class="six columns">
+    <div class="panel">
+  <p>Add <b><?=urldecode($word)?></b> to your list? <?=anchor('/item/add_item/'.$word,'+','class="button success"' )?></p>
+  <br />
+  </div>
+  </div>
+</div>
 <? $count =0;?>
 <? for($i=0;$i<count($listings);$i++){?>
 
@@ -15,9 +23,6 @@
   <? $count++;?>
   <? }?>
   
-  <? if($i==0){?>
-  <p>No serch results found</p>
-  <? }else{  ?>
   <p><?=$count?>:Items found</p>
-   <? }  ?>
+  
 </div>
