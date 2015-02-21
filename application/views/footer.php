@@ -14,7 +14,7 @@
 <div class="half">
 <h3>find us on social media</h3>
 <p>We want to hear about your adventures. Write to us on social media and tell us all about it.</p>
-<img src="../../images/facebook.jpg" width="22" height="22" /><img src="../../images/googleplus.jpg" width="22" height="22" /><img src="../../images/twitter.jpg" width="27" height="20" />
+<img src="../../images/facebook.jpg" width="22" height="22" /><a href="https://plus.google.com/111506030125310505350" rel="publisher"><img src="../../images/googleplus.jpg" width="22" height="22" /></a><a href="https://twitter.com/fatecrewapp" target="_blank"><img src="../../images/twitter.jpg" width="27" height="20" /></a>
 </div>
 </div>
 <div class="clear">&nbsp;</div>
