@@ -287,14 +287,14 @@ class Listing_model extends CI_Model {
 			
 	}
 
-	function addAffilate($data){
-		//var_dump($data);
+	function addAffilate($data, $type){
+		var_dump($data["xmlData"]["products"]["product"]);
 
 		// loop data
 		foreach($data["xmlData"]["products"]["product"] as $row){
-			//var_dump($row);die();
+			var_dump($row);
 
-			if($row['upc'] == "escapes"){
+			if($row['upc'] == $type){
 				$this->id	= "";
 
 				$this->go_to_url = $row["buy-url"];
@@ -334,6 +334,57 @@ class Listing_model extends CI_Model {
 		// insert into database
 
 		}
+	}
+
+	function addAffilateSKU($data, $type){
+			//var_dump($data);
+		
+
+			$row = $data["xmlData"]["products"]["product"];
+			if(count($row)>1){
+				$row = $data["xmlData"]["products"]["product"][0];
+			}
+
+			
+				$this->id	= "";
+
+				$this->go_to_url = $row["buy-url"];
+
+			 	$this->bucket_list_name	= stripslashes($row["name"]);
+				$this->search_engine_name	= stripslashes($row["name"]);
+				//$this->slug	= urlencode($row["name"]);
+				$this->slug	= str_replace(" ","-",stripslashes(str_replace(array(".", ",", "'", "/", ":","-","#","$","%","+","&","!","@","^","*","(",")",";", "'"), '' ,$row["name"])));
+				$this->company	= stripslashes($row["manufacturer-name"]);
+				$this->desc	= $row["description"];
+
+				
+				$this->currency = $row["currency"];
+				
+				$this->cost	= $row["price"];
+				$this->sales_cost = $row["sale-price"];
+				$this->contact	= "";
+				$this->image	= $row["image-url"];
+				$this->address	= "";
+				$this->date_live	= date("Y-m-d",mktime(0, 0, 0, date("m")  , date("d"), date("Y")));
+				$this->status	= 1;
+				$this->city_id	= "";
+				$this->user_id	= "";
+				$this->sku = $row["sku"];
+				$this-> active	= 1;
+				$this->date_created	= date("Y-m-d H:i:s");
+				$this-> date_modified	= date("Y-m-d H:i:s");
+
+
+
+				
+				$this->db->insert('listing', $this);
+			
+
+		// set post data
+
+		// insert into database
+
+		
 	}
 
 	function getTotalByKeyword($word){

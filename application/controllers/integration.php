@@ -22,8 +22,14 @@ class integration extends CI_Controller {
 	function run(){
 		
 		$data = $this->integration_model->get_data();
-		$this->integration_model->move_to_DB($data);
+		$this->integration_model->move_to_DB($data,"escapes");
 
+	}
+
+	function addbysku($SKU){
+		$data = $this->integration_model->get_data_by_SKU($SKU);
+		//var_dump($data);
+		$this->integration_model->move_to_DB($data,"local");
 	}
 
 	function city(){
