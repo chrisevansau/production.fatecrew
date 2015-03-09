@@ -119,6 +119,7 @@
 <iframe width="681" height="195" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?hl=en&amp;client=firefox-a&amp;q=<?=$result[0]['company']?>&amp;output=embed"></iframe>
 </div>
 <div class="one_third">
+  <h3 style="padding-left:160px; font-size: 18px !important; margin-bottom:-16px !important;">Was: $<?=$result[0]['cost']?></h3>
   <h2 style="padding-left:160px; font-size: 46px;">ONLY: $<?=$result[0]['sales_cost']?></h2>
 <? switch($status){
 		default:?>
