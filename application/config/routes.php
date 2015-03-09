@@ -54,6 +54,7 @@ $route['listings'] = 'welcome/searchListings';
 $route['privacy-policy'] = 'welcome/privacy_policy';
 $route['terms-and-conditions'] = 'welcome/terms_and_conditions';
 $route['404_override'] = 'welcome/pageNotFound';
+$route['grandcanyon'] = 'listing/show/grand-canyon--more-3-national-parks-in-4-days';
 
 
 
