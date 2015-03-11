@@ -5,6 +5,7 @@
 		<p>We would like to thank all of out partners and please feel free to see all of them below:</p>
 		<ul>
 		<li> <a href="http://www.traveltourismdirectory.net/Transportation/Buses/" target="_blank">Travel Tourism Directory</a></li>
+		<li> <a href="http://www.onlytourist.com/" target="_blank">Only Tourist</a></li>
 	</ul>
 
 		
