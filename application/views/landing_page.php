@@ -28,7 +28,7 @@ So make your bucket list today get started inviting your crew, with the simple t
   		<div class="one_third">
   			<img src="../../images/set_up_list_img.jpg" width="297" height="190" />
   			<h2>set up a bucket list.</h2>
-  			<p>There are thousands of adventures to choose from and get rewarded with grate deals. Just add all your dreams and start working through them. Start searching today. </p>
+  			<p>There are thousands of adventures to choose from and get rewarded with great deals. Just add all your dreams and start working through them. Start searching today. </p>
   
   		</div>
 		<div class="one_third">
