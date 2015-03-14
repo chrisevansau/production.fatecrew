@@ -1,6 +1,6 @@
 
 <div class="header_feat">
-  <div class="header_img mar_top" style="background-image:url(../../images/new_bg_2.jpg);background-position-y: -340px;"><!--img src="../../images/header_image.jpg" width="1440" height="522" /--></div>
+  <div class="header_img mar_top" style="background-image:url(../../images/scuba-diver-569333_1920.jpg);background-position-y: -210px;"><!--img src="../../images/header_image.jpg" width="1440" height="522" /--></div>
   <div class="header_content">
   <div class="contnet">
   <div class="one_third">
