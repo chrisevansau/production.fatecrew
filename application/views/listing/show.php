@@ -22,7 +22,7 @@
 
 <p><?=nl2br($result[0]['desc'])?></p>
 
-<?=anchor( $result[0]['go_to_url'], "Buy Now", "class='button'")?><br /><br />
+<?=anchor( $result[0]['go_to_url'], "View More", "class='button'")?><br /><br />
 <iframe width="681" height="195" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?hl=en&amp;client=firefox-a&amp;q=<?=$result[0]['address']?>&amp;output=embed"></iframe>
 </div>
 <div class="one_third">
