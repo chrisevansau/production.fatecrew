@@ -101,7 +101,7 @@
 
 <p itemprop="description"><?=nl2br($result[0]['desc'])?></p>
 
-<?=anchor( $result[0]['go_to_url'], "Buy Now", "class='button success round' target='_blank'")?>   
+<?=anchor( $result[0]['go_to_url'], "View More...", "class='button success round' target='_blank'")?>   
 <? switch($status){
     default:?>
     <?=anchor( "/login", "Or add to my bucket list","class='button round'")?>
